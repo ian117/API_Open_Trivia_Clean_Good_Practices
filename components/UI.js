@@ -66,7 +66,7 @@ class UI {
     }
 
     static printCongrats(){
-        alert("Congrats, all is good!")
+        alert("Congrats, all good!")
     }
 
     static printYouAreWrong(counter, totalQuestions){
