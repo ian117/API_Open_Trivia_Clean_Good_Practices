@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Orientada</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/questions" id="form-questions">
+                            <div class="form-group">
+                                <label for="total-questions">Total questions (Up to 50)
+                                </label>
+                                <input type="number" min="1" max="50" class="form-control" id="total-questions" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="categories">Category</label>
+                                <select class="form-control" id="categories">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="difficulty">Difficulty</label>
+                                <select class="form-control" id="difficulty">
+                                    <option value="easy">Easy</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="hard">Hard</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="type">Type</label>
+                                <select class="form-control" id="type">
+                                    <option value="multiple">Multiple choice</option>
+                                    <option value="boolean">True / False</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary btn-block">
+                                I want my trivia
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="#" onsubmit="event.preventDefault()" id="check">
+            <!-- Questions container -->
+            <div class="row" id="questions-container">
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
