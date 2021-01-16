@@ -40,7 +40,7 @@ class UI {
         arrayOfAnswers.forEach(answer => {
             optionsInQuestion += `
             <div class="radio mt-3">
-                <label><input class="radiobtns" value="${answer}" type="radio" name="${element.question}">${answer}</label>
+                <label><input class="radiobtns" value="${answer}" type="radio" name="${element.question}" required>${answer}</label>
             </div>
             `
         })
